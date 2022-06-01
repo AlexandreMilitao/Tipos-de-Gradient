@@ -127,26 +127,6 @@ class _HomePageState extends State<SecondPage> {
               ),
             ),
           ),
-          Container(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Container(
-                  alignment: Alignment.topRight,
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.amberAccent,
-                    border: Border.all(
-                      width: 40,
-                      color: Colors.orange,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
         ],
       ),
     );
