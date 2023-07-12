@@ -88,6 +88,69 @@ class _HomePageState extends State<SecondPage> {
           ),
           Padding(
             padding: const EdgeInsets.all(5.0),
+            child: Center(
+              child: ClipRect(
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  heightFactor: 0.5,
+                  child: Container(
+                    height: 120,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.green,
+                      gradient: SweepGradient(
+                        colors: [
+                          Colors.green,
+                          Colors.green,
+                          Colors.green,
+                          Colors.grey,
+                        ],
+                        stops: [
+                          .2,
+                          .2,
+                          .2,
+                          .2,
+                        ],
+                        startAngle: 3.14,
+                      ),
+                    ),
+                    child: Container(
+                      margin: EdgeInsets.all(12),
+                      height: 120,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        border: Border.all(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(5),
+            child: Container(
+              height: 120,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.green,
+                gradient: SweepGradient(
+                  colors: [
+                    Colors.green,
+                    Colors.grey,
+                  ],
+                  stops: [
+                    .1,
+                    .1,
+                  ],
+                  startAngle: 3.14,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(5.0),
             child: Container(
               height: 300.0,
               alignment: Alignment.topRight,
